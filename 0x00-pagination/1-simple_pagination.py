@@ -51,10 +51,10 @@ class Server:
         assert type(page) is int and page > 0
         assert type(page_size) is int and page_size > 0
 
-        da = self.dataset()
-        dl = len(da)
+        dataset = self.dataset()
+        dl = len(dataset)
         try:
             i = index_range(page, page_size)
-            return da[i[0]:i[1]]
+            return dataset[i[0]:i[1]]
         except IndexError:
             return []
