@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""gfg"""
+"""gfjhbdsjhvc hj jhjhjsdbcjhb jhdsg"""
 from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
-    """fg"""
+    """fg,jhjhb,jhsdc kj klnlkjn sdckj"""
 
     def __init__(self):
-        """fg"""
+        """fgjbkjb sdc kjkjn kj dsc"""
         super().__init__()
         self.usage = []
 
     def put(self, key, item):
-        """gf gf"""
+        """gf gf.jbkj kjn sdakc jknkln;kn ;kl asdcnkjnl lksdv"""
         if key is None or item is None:
             pass
         else:
@@ -27,7 +27,7 @@ class MRUCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """fv gf"""
+        """fv gfhbskljd cbkjb kjls dkljbc kjlb asdlkjcj klsjd"""
         if key is not None and key in self.cache_data.keys():
             del self.usage[self.usage.index(key)]
             self.usage.append(key)
