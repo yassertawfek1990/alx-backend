@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""etv"""
+"""etsdj dsdff nklklnkl wewefefv"""
 from base_caching import BaseCaching
 
 
 class LIFOCache(BaseCaching):
-    """tt"""
+    """ttwefewv wefewfewver weefwef"""
 
     def __init__(self):
-        """tv"""
+        """tvewfew ewrewvrv eqrvererf errferfer"""
         super().__init__()
         self.order = []
 
     def put(self, key, item):
-        """gvr"""
+        """gvrerv re ervervver erewrver ervrev"""
         if key is None or item is None:
             pass
         else:
@@ -28,7 +28,7 @@ class LIFOCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """gt"""
+        """gtervvre  everververve ererverver  rrerveveerver"""
         if key is not None and key in self.cache_data.keys():
             return self.cache_data[key]
         return None
