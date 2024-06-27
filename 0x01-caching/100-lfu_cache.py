@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-"""rv re"""
+"""rv remb jnlkwennc kljnlk ncwelkn"""
 from base_caching import BaseCaching
 
 
 class LFUCache(BaseCaching):
-    """rv"""
+    """rvjhbjhb cweljcn lkjnkljn kkjwnlec"""
 
     def __init__(self):
-        """Infd r"""
+        """Infd b kcnewcn kljn kjn jewn kjcn kln kjnklj wlckjwecr"""
         super().__init__()
         self.usage = []
         self.frequency = {}
 
     def put(self, key, item):
-        """df"""
+        """dewhb kjwnekljc lkjnlknk cwejcnkjn klwec n kjnlkjwenlkj ewf"""
         if key is None or item is None:
             pass
         else:
@@ -48,7 +48,7 @@ class LFUCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """df f"""
+        """df fcaslc skJN NLKSJD SCNKJ KLJj knlkjsackjns"""
         if key is not None and key in self.cache_data.keys():
             del self.usage[self.usage.index(key)]
             self.usage.append(key)
