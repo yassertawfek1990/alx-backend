@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-""" df fd"""
+""" df sdcdcc dsdsvdj sdjknjkd dsvsfd"""
 from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """df"""
+    """df sdvSVDV DVSDV wwesdfe"""
 
     def __init__(self):
-        """df"""
+        """df weewv  ewfefwec vwe"""
         super().__init__()
         self.order = []
 
     def put(self, key, item):
-        """df"""
+        """dfweeew evwveqve
+        errvv egverg"""
         if key is None or item is None:
             pass
         else:
@@ -25,7 +26,9 @@ class FIFOCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """fv"""
+        """fvervre rjhbhjkjk jewf
+        efwfwefv er
+        weff"""
         if key is not None and key in self.cache_data.keys():
             return self.cache_data[key]
         return None
