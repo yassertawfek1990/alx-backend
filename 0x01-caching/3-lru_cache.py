@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-""" dfvv """
+""" dfvvdshb sdhbbjb ascbkj kjasassa bbkjbkjbkj asasas jknkj as """
 from base_caching import BaseCaching
 
 
 class LRUCache(BaseCaching):
-    """fvdf"""
+    """fvdfas abdjeb ljb cwecbkjewlbc ewewjlblkj ewemnwec jwej jwe"""
     def __init__(self):
-        """fdv"""
+        """fdvh bwbjb hjbwhjeb fjhb csdklnnl kljasdsdc"""
         super().__init__()
         self.usage = []
 
     def put(self, key, item):
-        """fdv"""
+        """fdv,jhbjh qcjblb lkj wecbkl lkbnlkj cec"""
         if key is None or item is None:
             pass
         else:
@@ -26,7 +26,7 @@ class LRUCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
-        """dfv"""
+        """dfvhgvkh cjhbhjbwe cjbljblwqekcb kje"""
         if key is not None and key in self.cache_data.keys():
             del self.usage[self.usage.index(key)]
             self.usage.append(key)
