@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""A Basic Flask app with internationalization support.
-"""
+"""kjwke dblkjblkjasb cjkjb jhb sjab cjlbjhb lajsb cjkblas"""
 import pytz
 from flask_babel import Babel
 from typing import Union, Dict
@@ -8,8 +7,7 @@ from flask import Flask, render_template, request, g
 
 
 class Config:
-    """Represents a Flask Babel configuration.
-    """
+    """ksbdlc kjb kljblas cblkjbjaslb caskjlc """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
@@ -28,8 +26,7 @@ users = {
 
 
 def get_user() -> Union[Dict, None]:
-    """Retrieves a user based on a user id.
-    """
+    """hbalwb dkjalsncnjkbkasbc kj bkjbljkb askljcn kjl aslc blkja"""
     login_id = request.args.get('login_as', '')
     if login_id:
         return users.get(int(login_id), None)
@@ -38,16 +35,14 @@ def get_user() -> Union[Dict, None]:
 
 @app.before_request
 def before_request() -> None:
-    """Performs some routines before each request's resolution.
-    """
+    """a,shbcklj blkjb lkjbkaj nsckjlkjj lk lknk;nasc"""
     user = get_user()
     g.user = user
 
 
 @babel.localeselector
 def get_locale() -> str:
-    """Retrieves the locale for a web page.
-    """
+    """kbakjcb kjblkj askjl bckljblkblkjb bkljasb ckjbkjbl sa"""
     locale = request.args.get('locale', '')
     if locale in app.config["LANGUAGES"]:
         return locale
@@ -61,8 +56,7 @@ def get_locale() -> str:
 
 @babel.timezoneselector
 def get_timezone() -> str:
-    """Retrieves the timezone for a web page.
-    """
+    """kal dhuuh lkj kjbkjlkbjasdb lb ljb ljaks bckjkn lkjas"""
     timezone = request.args.get('timezone', '').strip()
     if not timezone and g.user:
         timezone = g.user['timezone']
@@ -74,8 +68,7 @@ def get_timezone() -> str:
 
 @app.route('/')
 def get_index() -> str:
-    """The home/index page.
-    """
+    """kjnalkjc kj kljasc kbkljab scb blkjb askjl"""
     return render_template('7-index.html')
 
 

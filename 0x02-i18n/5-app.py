@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-A Basic flask application
-"""
+"""jhjbjhasb cb lkjabsjkc bkjabsclkj"""
 from typing import (
     Dict, Union
 )
@@ -13,9 +11,7 @@ from flask_babel import Babel
 
 
 class Config(object):
-    """
-    Application configuration class
-    """
+    """jhvhjsd kjkjl skjd jbkljasbc llkj as; mh,asx"""
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
@@ -31,9 +27,7 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale() -> str:
-    """
-    Gets locale from request object
-    """
+    """jgkj sbd nkjnsdn clknskldc,jhbj dsc kjds"""
     locale = request.args.get('locale', '').strip()
     if locale and locale in Config.LANGUAGES:
         return locale
@@ -49,29 +43,19 @@ users = {
 
 
 def get_user(id) -> Union[Dict[str, Union[str, None]], None]:
-    """
-    Validate user login details
-    Args:
-        id (str): user id
-    Returns:
-        (Dict): user dictionary if id is valid else None
-    """
+    """khkjhsd lckjh lkjsd cjb"""
     return users.get(int(id), 0)
 
 
 @app.before_request
 def before_request():
-    """
-    Adds valid user to the global session object `g`
-    """
+    """,kjskjd ckjn;ksdn n;sdcsdvds"""
     setattr(g, 'user', get_user(request.args.get('login_as', 0)))
 
 
 @app.route('/', strict_slashes=False)
 def index() -> str:
-    """
-    Renders a basic html template
-    """
+    """ksbldbck bdslkcb kjsdb chhj hjbkdshhjck hjsdchj"""
     return render_template('5-index.html')
 
 

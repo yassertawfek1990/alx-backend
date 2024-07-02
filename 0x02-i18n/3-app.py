@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-A Basic flask application
-"""
+"""sdklj kjsdkj klb lkjsdkl lk lkdsdlk ks"""
 from flask import Flask
 from flask import request
 from flask import render_template
@@ -9,9 +7,7 @@ from flask_babel import Babel
 
 
 class Config(object):
-    """
-    Application configuration class
-    """
+    """kuahluh  kjbhkh bash bbshaa"""
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
@@ -27,17 +23,13 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale():
-    """
-    Gets locale from request object
-    """
+    """kbkljb sjldb clb lkjbsdc kjkjl dsl"""
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 @app.route('/', strict_slashes=False)
 def index():
-    """
-    Renders a basic html template
-    """
+    """kblskb c.kna cnlkn jasc lkh;;nans;lc;;"""
     return render_template('3-index.html')
 
 
