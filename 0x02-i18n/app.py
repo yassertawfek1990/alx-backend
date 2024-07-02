@@ -8,8 +8,7 @@ from flask import Flask, render_template, request, g
 
 
 class Config:
-    """Represents a Flask Babel configuration.
-    """
+    """wlef llkn welkfn kjnlkwjenf knjwelknf kl wen"""
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
@@ -28,8 +27,7 @@ users = {
 
 
 def get_user() -> Union[Dict, None]:
-    """Retrieves a user based on a user id.
-    """
+    """wkef knlkjewnlkfjnkn lkjwef klkjnwelfn kljnlkjwen f"""
     login_id = request.args.get('login_as', '')
     if login_id:
         return users.get(int(login_id), None)
@@ -38,16 +36,14 @@ def get_user() -> Union[Dict, None]:
 
 @app.before_request
 def before_request() -> None:
-    """Performs some routines before each request's resolution.
-    """
+    """kjwlekj fkj lwkejfn kljnlknjwlekfj nlkjnwelkjfn kljnwlek"""
     user = get_user()
     g.user = user
 
 
 @babel.localeselector
 def get_locale() -> str:
-    """Retrieves the locale for a web page.
-    """
+    """wefkjn kjnweknf j kjlnlwejkjfn lkn lkn wekjlfklj we"""
     queries = request.query_string.decode('utf-8').split('&')
     query_table = dict(map(
         lambda x: (x if '=' in x else '{}='.format(x)).split('='),
@@ -67,8 +63,7 @@ def get_locale() -> str:
 
 @babel.timezoneselector
 def get_timezone() -> str:
-    """Retrieves the timezone for a web page.
-    """
+    """kjnwked kjnkjwenf kjn kjwef kjn kjn kwjef j"""
     timezone = request.args.get('timezone', '').strip()
     if not timezone and g.user:
         timezone = g.user['timezone']
@@ -80,8 +75,7 @@ def get_timezone() -> str:
 
 @app.route('/')
 def get_index() -> str:
-    """The home/index page.
-    """
+    """ajsdnlkj kjsnlk nlkjsasfn kj nlknjalkfwelk"""
     g.time = format_datetime()
     return render_template('index.html')
 
